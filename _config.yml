@@ -1,3 +1,4 @@
 url: http://mag.icus.se/blog
 name: magicus
 description: Technology, magic, and the in-between
+excerpt_separator: <!--more-->
