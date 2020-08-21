@@ -15,10 +15,11 @@ When writing programs that should be easy to debug, it is often useful to know i
 
 And there never seems to be any good code to find on Google, either. So, as a courtesy to the rest of the world, here is a code snippet:
 
-<pre>#include &lt;pthread.h&gt;
-#include &lt;stdlib.h&gt;
-#include &lt;stdbool.h&gt;
-#include &lt;sys/ptrace.h&gt;static void*
+```
+#include <pthread.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <sys/ptrace.h>
 
 static void*
 test_trace(void* ignored)
@@ -45,4 +46,5 @@ is_debugger_attached(void)
 	}
 
 	return result != NULL;
-}</pre>
+}
+```
