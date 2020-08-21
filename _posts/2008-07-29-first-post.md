@@ -11,7 +11,7 @@ categories:
 tags:
   - technology blogging
 ---
-So, it seems I&#8217;ve gotten myself a blog. Keepin&#8217; up with the times, heh? I&#8217;ve tried doing things like this before (even though it wasn&#8217;t called &#8220;blog&#8221; back then), but never succeeded in keeping them updates.
+So, it seems I've gotten myself a blog. Keepin' up with the times, heh? I've tried doing things like this before (even though it wasn't called "blog" back then), but never succeeded in keeping them updates.
 
 This time, however, I have a somewhat more narrow focus, which will hopefully help me to determine what to post, and when.
 

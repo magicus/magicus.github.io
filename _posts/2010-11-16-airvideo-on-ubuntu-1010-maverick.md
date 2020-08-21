@@ -15,11 +15,11 @@ tags:
   - linux
   - ubuntu
 ---
-I&#8217;ve recently gotten myself an iPad. Of course you want to watch videos on an iPad, right? Of couse you want them optimized for the iPad hardware, right? Of course you don&#8217;t want to do that ahead of time and transfer to the iPad, but on-the-fly directly from your media library, right?
+I've recently gotten myself an iPad. Of course you want to watch videos on an iPad, right? Of couse you want them optimized for the iPad hardware, right? Of course you don't want to do that ahead of time and transfer to the iPad, but on-the-fly directly from your media library, right?
 
-There&#8217;s an app for that! (Surprise&#8230;) Probably several. But the one that rocks is [Air Video](http://www.inmethod.com/air-video/index.html "AirVideo").
+There's an app for that! (Surprise...) Probably several. But the one that rocks is [Air Video](http://www.inmethod.com/air-video/index.html "AirVideo").
 
-Air Video needs a special server, and it need quite competent hardware to do on-the-fly conversion. But the server is only distributed for Windows and Mac OS X (once again: surprise&#8230;). Fortunately, it is quite easy to get it running under Linux. This is what I did.
+Air Video needs a special server, and it need quite competent hardware to do on-the-fly conversion. But the server is only distributed for Windows and Mac OS X (once again: surprise...). Fortunately, it is quite easy to get it running under Linux. This is what I did.
 
 <!--more-->
 
@@ -43,7 +43,7 @@ password =<br />
 subtitles.encoding = windows-1250<br />
 subtitles.font = Verdana<br />
 folders = Movies:/path/to/my/Movies,MoreMovies:/path/to/more/Movies`  
-    Replace the value for &#8220;folders&#8221; with something that match your system.
+    Replace the value for "folders" with something that match your system.
   6. Now you can start the server by:  
     `java -jar /usr/local/lib/airvideo/AirVideoServerLinux.jar /usr/local/etc/airvideo.properties`
   7. As a bonus, to get autodiscovery to work, add a file /etc/avahi/services/airvideo.service containing:`<br />
@@ -59,4 +59,4 @@ folders = Movies:/path/to/my/Movies,MoreMovies:/path/to/more/Movies`
 ` 
   8. Restart the bonjour service avahi by `sudo service avahi-daemon restart`
   9. That shoud be it! Now you should be able to find your server from the Air Video app, and you should be able to play videos on it by on-the-fly conversion, just if you had been using the server under Windows or Mac OS X.
- 10. (Starting the service automatically is left as an excercise for the reader; see [mbirth&#8217;s wiki](http://wiki.birth-online.de/know-how/hardware/apple-iphone/airvideo-server-linux) for a suggestion on how to do this.)
+ 10. (Starting the service automatically is left as an excercise for the reader; see [mbirth's wiki](http://wiki.birth-online.de/know-how/hardware/apple-iphone/airvideo-server-linux) for a suggestion on how to do this.)

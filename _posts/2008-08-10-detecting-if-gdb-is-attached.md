@@ -9,7 +9,7 @@ permalink: /2008-08-10/detecting-if-gdb-is-attached/
 categories:
   - Uncategorized
 ---
-When writing programs that should be easy to debug, it is often useful to know if you are running with a debugger attached. In Linux, there is no reliable way of doing this, but you can make a clever hack that is quite okay. gdb and other debuggers work by using ptrace, but in Linux, only one process at a time can ptrace another. So, the trick is to try to ptrace ourselves, and if it fails, we can assume that we are running in a debugger. (Or in strace, for that matter.) Doing this properly requires starting a new thread, however. It&#8217;s not very hard, but it&#8217;s a bit tricky getting everything right, and Ihave the feeling I&#8217;m doing this over and over again.
+When writing programs that should be easy to debug, it is often useful to know if you are running with a debugger attached. In Linux, there is no reliable way of doing this, but you can make a clever hack that is quite okay. gdb and other debuggers work by using ptrace, but in Linux, only one process at a time can ptrace another. So, the trick is to try to ptrace ourselves, and if it fails, we can assume that we are running in a debugger. (Or in strace, for that matter.) Doing this properly requires starting a new thread, however. It's not very hard, but it's a bit tricky getting everything right, and Ihave the feeling I'm doing this over and over again.
 
 <!--more-->
 
