@@ -2,8 +2,6 @@
 title: "First post!"
 ---
 
-# First post!
-
 So, it seems I’ve gotten myself a blog. Keepin’ up with the times, heh? I’ve tried doing things like this before (even though it wasn’t called “blog” back then), but never succeeded in keeping them updates.
 
 This time, however, I have a somewhat more narrow focus, which will hopefully help me to determine what to post, and when.
