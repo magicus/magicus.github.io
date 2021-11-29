@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: magicus's Blog
+title: magicus
 email: mag@icus.se
 description: >- # this means to ignore newlines until "baseurl:"
-  Technology, magic, and the in-between.
+  Technology, magic, and the in-between
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://magicus.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -36,14 +36,13 @@ plainwhite:
   portfolio_image: assets/portfolio.png
   name: Magnus Ihse Bursie
   tagline: |
-   Hacking, Minecraft,
-      OpenJDK, Java
+   Technology, magic, and the in-between
   date_format: "%b %-d, %Y"
 
   social_links:
     twitter: mag_icus
     github: magicus
-    linkedIn: in/magnusihsebursie
+    linkedIn: in/ihsebursie
 
   navigation:
     - title: Posts
