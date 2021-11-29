@@ -1,0 +1,14 @@
+/*-----attach a .custom class to any style you add here-----*/
+
+/*custom link styles*/
+
+.custom .entry-content a {
+	font-weight: bold;
+	text-decoration: underline;
+	}
+	
+.custom .entry-content a:hover {
+	text-decoration: none;
+	color: #0098ED;
+	}
+	

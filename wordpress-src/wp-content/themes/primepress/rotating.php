@@ -1,0 +1,2 @@
+<img src="<?php bloginfo('template_url'); ?>/headers/header<?php echo(mt_rand(1,4)); ?>.jpg" width="920"
+alt="<?php bloginfo('name'); ?> header image" title="<?php bloginfo('name'); ?> header image" />
