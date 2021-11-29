@@ -1,7 +1,53 @@
-theme: jekyll-theme-slate
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
 title: magicus
+email: mag@icus.se
 description: Technology, magic, and the in-between
-github_username: magicus
-excerpt_separator: <!--more-->
-url: http://mag.icus.se/blog
-name: magicus
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://magicus.github.io # the base hostname & protocol for your site, e.g. http://example.com
+
+# FIXME: Are these needed?
+#url: http://mag.icus.se/blog
+#github_username: magicus
+#excerpt_separator: <!--more-->
+#name: magicus
+#theme: jekyll-theme-slate
+
+# Build settings
+remote_theme: thelehhman/plainwhite-jekyll
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+
+plainwhite:
+  portfolio_image: assets/portfolio.png
+  name: Magnus Ihse Bursie
+  tagline: Technology, magic, and the in-between
+  date_format: "%b %-d, %Y"
+
+  social_links:
+    twitter: mag_icus
+    github: magicus
+    linkedIn: in/ihsebursie
+
+  navigation:
+    - title: Posts
+      url: /
+    - title: About Me
+      url: /about
+
+  sitemap: true
+
+show_excerpts: true
+
+include: favicon.ico
+
+logo: assets/portfolio.png
