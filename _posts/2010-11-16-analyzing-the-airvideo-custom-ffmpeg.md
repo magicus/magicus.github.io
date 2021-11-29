@@ -22,7 +22,7 @@ This left me to conclude that the custom ffmpeg was based on the source includin
 
 Also, the custom source code bundle included libswscale including [this commit](http://git.ffmpeg.org/?p=libswscale;a=commitdiff;h=12beb744c2c61620d3259fc832ff1853cef9a9c0). (Snapshot [here](http://git.ffmpeg.org/?p=libswscale;a=snapshot;h=132a00bad4a459eca8a26d648e55a01dab51d45f;sf=tgz).)
 
-On top of this, they had made some patches to the ffmpeg source code (but none to the libswscale source). I created a patch file, it can be downloaded here: [ffmpeg_airvideo.patch](../wp-content/uploads/2010/11/ffmpeg_airvideo.patch)
+On top of this, they had made some patches to the ffmpeg source code (but none to the libswscale source). I created a patch file, it can be downloaded here: [ffmpeg_airvideo.patch]({{ site.baseurl }}/assets/posts/airvideo/ffmpeg_airvideo.patch)
 
 So, what changes have they made?
 
@@ -41,13 +41,13 @@ The two new command line options are `--conversion-id` and `--port-number`. They
 
 If you want to run a standard ffmpeg for the Air Video server, this is the very first thing it will fail on, complaining that --conversion-id is an unknown argument.
 
-I keep thinking that it would be possible to solve these problems without modifying ffmpeg. For instance, the segmenter seems to be a completely stand-alone program. It is started by:  
-`<br />
-if (argc > 1 && strcmp(argv[1], "segmenter") == 0)<br />
-{<br />
-    return segmenter_main(argc, argv);<br />
-}`
-
+I keep thinking that it would be possible to solve these problems without modifying ffmpeg. For instance, the segmenter seems to be a completely stand-alone program. It is started by:
+```
+if (argc > 1 && strcmp(argv[1], "segmenter") == 0)
+{
+    return segmenter_main(argc, argv);
+}
+```
 in the new main method that they provide in \_overlay.c, which supersedes ffmpeg's original main method, and the file implementing segmenter\_main (_segmenter.c) does not include any ffmpeg-specific header files.
 
 The overlay stuff is used to merge subtitles into the video stream. Appearantly, the Java server acts as a "overlay server" for ffmpeg, which openes a connection to the Java server (only on localhost, on the port provided on the command line) and requests "overlays" for specific parts of the movie, which are then returned by the server and merged on the video stream by the patched ffmpeg.

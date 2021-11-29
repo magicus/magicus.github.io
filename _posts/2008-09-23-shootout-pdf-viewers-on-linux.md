@@ -43,6 +43,6 @@ kghostview couldn't render this PDF, so it's unfortunately not included.
 
 So what can you learn from this? Acrobat has the longest loading time, enforcing my intuition on this bloatware. However, it was quite good at rendering time, which was made even better since the partial renderings were shown to the user, making the PDF usable from the first few seconds. Neither of the other PDF viewers made this. They didn't even have a progress meter, making it difficult to know how much longer you'd have to wait to view the PDF.
 
-Evince was by all measures the fastest of the viewers, but they could still do some work on their starup time.
+Evince was by all measures the fastest of the viewers, but they could still do some work on their startup time.
 
 And me..? I'll stick with the Acrobat reader. It's fast enough (better than KPDF, the default in Kubuntu), it gives a good indication on how much is left to load/render, and I have yet to find any rendering issues (not so surprising considering that it's the de facto reference implementation). I tried hard to use the open source alternatives, but they didn't measure up.

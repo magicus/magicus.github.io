@@ -23,7 +23,7 @@ So, what does my music tag cloud look like? <!--more-->One of the features of bo
 
 The result is this: [a tagcloud of my music collection](http://www.wordle.net/gallery/wrdl/722224/ihse%27s_last.fm_tag_cloud). It seems to match quite well my idea of what kind of music I have.
 
-[<img class="aligncenter size-full wp-image-9" title="ihse-music-tag-cloud" src="http://mag.icus.se/blog/wp-content/uploads/2009/04/ihse-music-tag-cloud.png" alt="A tag cloud describing my music collection" width="500" height="244" srcset="http://mag.icus.se/blog/wp-content/uploads/2009/04/ihse-music-tag-cloud.png 831w, http://mag.icus.se/blog/wp-content/uploads/2009/04/ihse-music-tag-cloud-300x146.png 300w" sizes="(max-width: 500px) 100vw, 500px" />](http://mag.icus.se/blog/wp-content/uploads/2009/04/ihse-music-tag-cloud.png)
+![A tag cloud describing my music collection]({{ site.baseurl }}/assets/posts/music-tag-cloud/ihse-music-tag-cloud.png){: class="center_85" }
 
 So, now the only thing I'm missing is a way to integrate this into my SqueezeCenter solution, so I can play this on my Squeezeboxes, and not just on my computer.
 

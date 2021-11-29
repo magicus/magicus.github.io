@@ -20,6 +20,10 @@ excerpt_separator: <!--more-->
 #name: magicus
 #theme: jekyll-theme-slate
 
+kramdown:
+  input: GFM
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+
 # Build settings
 remote_theme: thelehhman/plainwhite-jekyll
 plugins:
