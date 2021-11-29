@@ -13,6 +13,13 @@ description: Technology, magic, and the in-between
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://magicus.github.io # the base hostname & protocol for your site, e.g. http://example.com
 
+# FIXME: Are these needed?
+#url: http://mag.icus.se/blog
+#github_username: magicus
+#excerpt_separator: <!--more-->
+#name: magicus
+#theme: jekyll-theme-slate
+
 # Build settings
 remote_theme: thelehhman/plainwhite-jekyll
 plugins:
