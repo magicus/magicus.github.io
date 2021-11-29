@@ -2,3 +2,6 @@ theme: jekyll-theme-slate
 title: magicus
 description: Technology, magic, and the in-between
 github_username: magicus
+excerpt_separator: <!--more-->
+url: http://mag.icus.se/blog
+name: magicus
