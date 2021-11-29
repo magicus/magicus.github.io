@@ -16,7 +16,7 @@ url: https://magicus.github.io # the base hostname & protocol for your site, e.g
 # FIXME: Are these needed?
 #url: http://mag.icus.se/blog
 #github_username: magicus
-#excerpt_separator: <!--more-->
+excerpt_separator: <!--more-->
 #name: magicus
 #theme: jekyll-theme-slate
 
