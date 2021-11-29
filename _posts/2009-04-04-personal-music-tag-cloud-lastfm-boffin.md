@@ -19,9 +19,7 @@ I just discovered a new program from Last.FM -- [boffin](http://www.last.fm/grou
 
 Currently, I'm listening to music tagged _ebm_ or _synthpop_ or _darkwave_. Music from my own collection. Music I like to listen to, but I never had been able to access in this way.
 
-So, what does my music tag cloud look like? <!--more-->One of the features of boffin is that it can export a list of tag-importance pairs, with the importance value of 1.0 for the most common tag, and a number relative this value for the rest of the tags. This list can be imported into 
-
-[Wordle](http://www.wordle.net/), and boffin conveniently takes you directly to the upload page with the values loaded on the clipboard. The first time I tried this, though, it made the Wordle java applet crash and bring Firefox down with it (!), so instead I pasted the list to a text editor and just kept the first one third, which was more tags than Wordle could display anyway.
+So, what does my music tag cloud look like? <!--more-->One of the features of boffin is that it can export a list of tag-importance pairs, with the importance value of 1.0 for the most common tag, and a number relative this value for the rest of the tags. This list can be imported into [Wordle](http://www.wordle.net/), and boffin conveniently takes you directly to the upload page with the values loaded on the clipboard. The first time I tried this, though, it made the Wordle java applet crash and bring Firefox down with it (!), so instead I pasted the list to a text editor and just kept the first one third, which was more tags than Wordle could display anyway.
 
 The result is this: [a tagcloud of my music collection](http://www.wordle.net/gallery/wrdl/722224/ihse%27s_last.fm_tag_cloud). It seems to match quite well my idea of what kind of music I have.
 
@@ -29,10 +27,12 @@ The result is this: [a tagcloud of my music collection](http://www.wordle.net/ga
 
 So, now the only thing I'm missing is a way to integrate this into my SqueezeCenter solution, so I can play this on my Squeezeboxes, and not just on my computer.
 
-So, how do you install this on Ubuntu? First, download the .deb [here](http://www.mediafire.com/?mwmilyyyodz). (Thanks to [trubazoid](http://www.last.fm/group/Audioscrobbler+Beta/forum/30705/_/510180/10#f8990259)!) Then install it with:_  
-sudo dpkg -i boffin\_0.0.4-1\_i386.deb_
+So, how do you install this on Ubuntu? First, download the .deb [here](http://www.mediafire.com/?mwmilyyyodz). (Thanks to [trubazoid](http://www.last.fm/group/Audioscrobbler+Beta/forum/30705/_/510180/10#f8990259)!) Then install it with:
 
-Add support for the SQLite DB on QT with:_  
-sudo apt-get install libqt4-sql-sqlite_
+`sudo dpkg -i boffin_0.0.4-1_i386.deb`
+
+Add support for the SQLite DB on QT with:
+
+`sudo apt-get install libqt4-sql-sqlite`
 
 If you don't have QT installed, you probably need to install more libraries as well.

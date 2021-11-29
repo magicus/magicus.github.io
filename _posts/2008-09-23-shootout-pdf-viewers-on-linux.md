@@ -28,67 +28,16 @@ My test included:
   2. Open the PDF from the Recently opened menu, and measure time until the PDF is fully rendered.
   3. Close the application and redo step one, this time measuring the time until the PDF is fully rendered.
 
-The warmup step was included to try to populate the cache, so hard disk loading time would not be affecting the test. Anyway, the test is not extremely scientific, since the timing was done by a stop-watch and me looking out for the rendering. So,+/- 1 second is probably a reasonable margin of error.
+The warmup step was included to try to populate the cache, so hard disk loading time would not be affecting the test. Anyway, the test is not extremely scientific, since the timing was done by a stop-watch and me looking out for the rendering. So +/- 1 second is probably a reasonable margin of error.
 
 Nevertheless, the results was interesting:
 
-<table>
-  <tr>
-    <td>
-      <strong>Application</strong>
-    </td>
-    
-    <td>
-      <strong>Load PDF</strong>
-    </td>
-    
-    <td>
-      <strong>Start and load PDF</strong>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Adobe Acrobat Reader
-    </td>
-    
-    <td>
-      13 s
-    </td>
-    
-    <td>
-      18 s
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      KPDF
-    </td>
-    
-    <td>
-      18 s
-    </td>
-    
-    <td>
-      19 s
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      evince
-    </td>
-    
-    <td>
-      10 s
-    </td>
-    
-    <td>
-      13 s
-    </td>
-  </tr>
-</table>
+| Application          | Load PDF | Start and load PDF |
+|----------------------|----------|--------------------|
+| Adobe Acrobat Reader |     13 s |               18 s |
+| KPDF                 |     18 s |               19 s |
+| evince               |     10 s |               13 s |
+
 
 kghostview couldn't render this PDF, so it's unfortunately not included.
 

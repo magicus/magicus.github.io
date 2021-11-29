@@ -21,7 +21,6 @@ I was presented with this example when I was about to write my B.A. thesis in ph
 
   3. Make the sentence passive:
     _For clarity of thought, clarity of writing should be sought._
-
 <!--more-->
 
   4. Use two words where one would do:
